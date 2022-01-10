@@ -51,5 +51,12 @@ Para que a comunicação serial funcione, onde o usuário poderá atualizar o re
 4) se for digital  2, 1, HH, MM, SS: Será atualizado a hora do relógio e mostrado no segundo terminal
 5) se for digital  2, 2, DD, MM, AA: Será atualizado a data do relógio e mostrado no segundo terminal
 6) se for digital  2, 3, HH, MM, SS: Será atualizado o alarme do relógio e mostrado no segundo terminal
-```			
+```
+Tests
+----
+
+<div align="center">
+<img src="https://github.com/Railson95/ComunicacaoSerial-Relogio-Com-Botoes/issues/1#issue-1098209582" width="700px" />
+</div>
+
 		
