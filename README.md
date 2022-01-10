@@ -55,8 +55,10 @@ Para que a comunicação serial funcione, onde o usuário poderá atualizar o re
 Tests
 ----
 
+Realizando leitura da hora e mostrando no segundo terminal
+
 <div align="center">
-<img src="https://github.com/Railson95/ComunicacaoSerial-Relogio-Com-Botoes/issues/1#issue-1098209582" width="700px" />
+<img src="https://user-images.githubusercontent.com/43474214/148815770-91bcf66d-ca42-4554-b179-b3fc434b7bba.png" width="700px" />
 </div>
 
 		
