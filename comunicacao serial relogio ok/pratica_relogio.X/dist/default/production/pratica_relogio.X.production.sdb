@@ -1,0 +1,691 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+[v _Delay10TCYx Delay10TCYx `(v  1 e 1 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 1 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+[v _BusyXLCD BusyXLCD `(uc  1 e 1 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+[v _OpenXLCD OpenXLCD `(v  1 e 1 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+[v _putrsXLCD putrsXLCD `(v  1 e 1 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putsxlcd.c
+[v _putsXLCD putsXLCD `(v  1 e 1 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+[v _SetDDRamAddr SetDDRamAddr `(v  1 e 1 0 ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+[v _WriteCmdXLCD WriteCmdXLCD `(v  1 e 1 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+[v _WriteDataXLCD WriteDataXLCD `(v  1 e 1 0 ]
+"4 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 1 0 ]
+"8
+[v _DelayPORXLCD DelayPORXLCD `(v  1 e 1 0 ]
+"18
+[v _InitXLCD InitXLCD `(i  1 e 2 0 ]
+"25
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"30
+[v _controlaCursor controlaCursor `(v  1 e 1 0 ]
+"47
+[v _controlaCursorR controlaCursorR `(v  1 e 1 0 ]
+"78
+[v _exibirData exibirData `(*.2uc  1 e 2 0 ]
+"94
+[v _exibirHora exibirHora `(*.2uc  1 e 2 0 ]
+"123
+[v _exibirAlarme exibirAlarme `(*.2uc  1 e 2 0 ]
+"152
+[v _inicializaTela1 inicializaTela1 `(v  1 e 1 0 ]
+"166
+[v _inicializaTela2 inicializaTela2 `(v  1 e 1 0 ]
+"182
+[v _atualiza_tela atualiza_tela `(v  1 e 1 0 ]
+"201
+[v _ajustarAlarme ajustarAlarme `(v  1 e 1 0 ]
+"248
+[v _despertarAlarme despertarAlarme `(v  1 e 1 0 ]
+"256
+[v _ajustarT1 ajustarT1 `(i  1 e 2 0 ]
+"15 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"122
+[v _SerialRxPinInterrupt SerialRxPinInterrupt `II(v  1 e 1 0 ]
+"6 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\relogio.c
+[v _verifica_b verifica_b `(v  1 e 1 0 ]
+"14
+[v _tratar_relogio tratar_relogio `(v  1 e 1 0 ]
+"76
+[v _tratar_alarme tratar_alarme `(v  1 e 1 0 ]
+"91
+[v _despertar despertar `(i  1 e 2 0 ]
+"3 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\UART.c
+[v _crc16 crc16 `(i  1 e 2 0 ]
+"7
+[v _tx_data tx_data `(v  1 e 1 0 ]
+"25
+[v _inicializarUART inicializarUART `(v  1 e 1 0 ]
+"52
+[v _converte_char_hex converte_char_hex `(uc  1 e 1 0 ]
+"75
+[v _verifica_comando verifica_comando `(v  1 e 1 0 ]
+"83
+[v _realizar_alteracoes realizar_alteracoes `(v  1 e 1 0 ]
+"104
+[v _montar_resposta montar_resposta `(v  1 e 1 0 ]
+"128
+[v _trata_comando trata_comando `(v  1 e 1 0 ]
+"156
+[v _envia_respostaTX envia_respostaTX `(v  1 e 1 0 ]
+"166
+[v _maquina_estado maquina_estado `(i  1 e 2 0 ]
+[s S123 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"2699 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f4550.h
+[s S132 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S141 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S144 . 1 `S123 1 . 1 0 `S132 1 . 1 0 `S141 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES144  1 e 1 @3971 ]
+"2727
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S800 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3543
+[s S809 . 1 `uc 1 LB0 1 0 :1:0 
+]
+[s S811 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+]
+[s S814 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LB2 1 0 :1:2 
+]
+[s S817 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LB3 1 0 :1:3 
+]
+[s S820 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LB4 1 0 :1:4 
+]
+[s S823 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LB5 1 0 :1:5 
+]
+[s S826 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LB6 1 0 :1:6 
+]
+[s S829 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S832 . 1 `S800 1 . 1 0 `S809 1 . 1 0 `S811 1 . 1 0 `S814 1 . 1 0 `S817 1 . 1 0 `S820 1 . 1 0 `S823 1 . 1 0 `S826 1 . 1 0 `S829 1 . 1 0 ]
+[v _LATBbits LATBbits `VES832  1 e 1 @3978 ]
+"3580
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S647 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3829
+[s S654 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S661 . 1 `S647 1 . 1 0 `S654 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES661  1 e 1 @3988 ]
+"3954
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S889 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4205
+[s S898 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S907 . 1 `S889 1 . 1 0 `S898 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES907  1 e 1 @3987 ]
+[s S207 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4441
+[s S216 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S222 . 1 `S207 1 . 1 0 `S216 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES222  1 e 1 @3998 ]
+"4876
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S539 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4917
+[s S548 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S551 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S554 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S557 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S560 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S562 . 1 `S539 1 . 1 0 `S548 1 . 1 0 `S551 1 . 1 0 `S554 1 . 1 0 `S557 1 . 1 0 `S560 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES562  1 e 1 @4011 ]
+"5085
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S593 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5124
+[s S602 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S611 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S614 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S616 . 1 `S593 1 . 1 0 `S602 1 . 1 0 `S611 1 . 1 0 `S614 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES616  1 e 1 @4012 ]
+"5340
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5351
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5362
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+[s S29 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"7984
+[s S36 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S40 . 1 `S29 1 . 1 0 `S36 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES40  1 e 1 @4053 ]
+"8033
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S55 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8476
+[s S64 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S73 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S77 . 1 `S55 1 . 1 0 `S64 1 . 1 0 `S73 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES77  1 e 1 @4082 ]
+"8826
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"9658
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"9772
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"9774
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"9776
+[v _RCIP RCIP `VEb  1 e 0 @31997 ]
+"10022
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10174
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"4 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\relogio.c
+[v _qtdDias_mes qtdDias_mes `[12]i  1 e 24 0 ]
+"21 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\var.h
+[v _ESTADO_COMUNICACAO ESTADO_COMUNICACAO `uc  1 e 1 0 ]
+"23
+[v _i i `ui  1 e 2 0 ]
+"24
+[v _dado dado `[7]uc  1 e 7 0 ]
+"25
+[v _BUFFRESP BUFFRESP `[7]uc  1 e 7 0 ]
+[s S21 . 6 `i 1 dia 2 0 `i 1 mes 2 2 `i 1 ano 2 4 ]
+"29
+[v _ca ca `S21  1 e 6 0 ]
+[s S25 . 6 `i 1 minuto 2 0 `i 1 segundo 2 2 `i 1 hora 2 4 ]
+"30
+[v _re re `S25  1 e 6 0 ]
+"31
+[v _alarme alarme `S25  1 e 6 0 ]
+"32
+[v _flagDisplay flagDisplay `i  1 e 2 0 ]
+"33
+[v _flag_inicializacao flag_inicializacao `i  1 e 2 0 ]
+"34
+[v _contador contador `i  1 e 2 0 ]
+"36
+[v _flagTela flagTela `i  1 e 2 0 ]
+"37
+[v _T1 T1 `i  1 e 2 0 ]
+[v _T2 T2 `i  1 e 2 0 ]
+"38
+[v _posCursor posCursor `i  1 e 2 0 ]
+"39
+[v _posCursorR posCursorR `i  1 e 2 0 ]
+"40
+[v _flagAlarme flagAlarme `i  1 e 2 0 ]
+"41
+[v _tempoAlarme tempoAlarme `i  1 e 2 0 ]
+"15 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"102
+} 0
+"166 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\UART.c
+[v _maquina_estado maquina_estado `(i  1 e 2 0 ]
+{
+"195
+} 0
+"75
+[v _verifica_comando verifica_comando `(v  1 e 1 0 ]
+{
+"81
+} 0
+"3
+[v _crc16 crc16 `(i  1 e 2 0 ]
+{
+[v crc16@dados dados `*.39uc  1 p 2 31 ]
+"5
+} 0
+"128
+[v _trata_comando trata_comando `(v  1 e 1 0 ]
+{
+"154
+} 0
+"83
+[v _realizar_alteracoes realizar_alteracoes `(v  1 e 1 0 ]
+{
+"102
+} 0
+"104
+[v _montar_resposta montar_resposta `(v  1 e 1 0 ]
+{
+"126
+} 0
+"156
+[v _envia_respostaTX envia_respostaTX `(v  1 e 1 0 ]
+{
+"164
+} 0
+"7
+[v _tx_data tx_data `(v  1 e 1 0 ]
+{
+[v tx_data@data data `Cuc  1 a 1 wreg ]
+[v tx_data@data data `Cuc  1 a 1 wreg ]
+[v tx_data@data data `Cuc  1 a 1 31 ]
+"12
+} 0
+"25
+[v _inicializarUART inicializarUART `(v  1 e 1 0 ]
+{
+"50
+} 0
+"248 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _despertarAlarme despertarAlarme `(v  1 e 1 0 ]
+{
+"254
+} 0
+"91 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\relogio.c
+[v _despertar despertar `(i  1 e 2 0 ]
+{
+"98
+} 0
+"182 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _atualiza_tela atualiza_tela `(v  1 e 1 0 ]
+{
+"194
+} 0
+"166
+[v _inicializaTela2 inicializaTela2 `(v  1 e 1 0 ]
+{
+"180
+} 0
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putsxlcd.c
+[v _putsXLCD putsXLCD `(v  1 e 1 0 ]
+{
+[v putsXLCD@buffer buffer `*.25uc  1 p 2 0 ]
+"25
+} 0
+"123 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _exibirAlarme exibirAlarme `(*.2uc  1 e 2 0 ]
+{
+[v exibirAlarme@h h `i  1 p 2 28 ]
+[v exibirAlarme@m m `i  1 p 2 30 ]
+[v exibirAlarme@s s `i  1 p 2 32 ]
+"124
+[v exibirAlarme@string string `*.2uc  1 s 2 string ]
+"150
+} 0
+"30
+[v _controlaCursor controlaCursor `(v  1 e 1 0 ]
+{
+"45
+} 0
+"152
+[v _inicializaTela1 inicializaTela1 `(v  1 e 1 0 ]
+{
+"164
+} 0
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\putrxlcd.c
+[v _putrsXLCD putrsXLCD `(v  1 e 1 0 ]
+{
+[v putrsXLCD@buffer buffer `*.2Cuc  1 p 2 34 ]
+"25
+} 0
+"16 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\writdata.c
+[v _WriteDataXLCD WriteDataXLCD `(v  1 e 1 0 ]
+{
+[v WriteDataXLCD@data data `uc  1 a 1 wreg ]
+[v WriteDataXLCD@data data `uc  1 a 1 wreg ]
+"35
+[v WriteDataXLCD@data data `uc  1 a 1 32 ]
+"63
+} 0
+"94 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _exibirHora exibirHora `(*.2uc  1 e 2 0 ]
+{
+[v exibirHora@h h `i  1 p 2 28 ]
+[v exibirHora@m m `i  1 p 2 30 ]
+[v exibirHora@s s `i  1 p 2 32 ]
+"95
+[v exibirHora@string string `*.2uc  1 s 2 string ]
+"121
+} 0
+"78
+[v _exibirData exibirData `(*.2uc  1 e 2 0 ]
+{
+[v exibirData@dia dia `i  1 p 2 28 ]
+[v exibirData@mes mes `i  1 p 2 30 ]
+[v exibirData@ano ano `i  1 p 2 32 ]
+"79
+[v exibirData@string string `*.2uc  1 s 2 string ]
+"92
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"528
+[v sprintf@val val `ui  1 a 2 25 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 21 ]
+"499
+[v sprintf@c c `c  1 a 1 27 ]
+"506
+[v sprintf@prec prec `c  1 a 1 24 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 23 ]
+"492
+[v sprintf@sp sp `*.2uc  1 p 2 11 ]
+[v sprintf@f f `*.25Cuc  1 p 2 13 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 31 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"31
+} 0
+"47 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _controlaCursorR controlaCursorR `(v  1 e 1 0 ]
+{
+"76
+} 0
+"256
+[v _ajustarT1 ajustarT1 `(i  1 e 2 0 ]
+{
+"303
+} 0
+"201
+[v _ajustarAlarme ajustarAlarme `(v  1 e 1 0 ]
+{
+"230
+} 0
+"76 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\relogio.c
+[v _tratar_alarme tratar_alarme `(v  1 e 1 0 ]
+{
+[s S25 . 6 `i 1 minuto 2 0 `i 1 segundo 2 2 `i 1 hora 2 4 ]
+[v tratar_alarme@c c `*.39S25  1 p 2 31 ]
+"89
+} 0
+"25 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"28
+} 0
+"18
+[v _InitXLCD InitXLCD `(i  1 e 2 0 ]
+{
+"23
+} 0
+"19 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\openxlcd.c
+[v _OpenXLCD OpenXLCD `(v  1 e 1 0 ]
+{
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 wreg ]
+"31
+[v OpenXLCD@lcdtype lcdtype `uc  1 a 1 3 ]
+"80
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\wcmdxlcd.c
+[v _WriteCmdXLCD WriteCmdXLCD `(v  1 e 1 0 ]
+{
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 wreg ]
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 wreg ]
+"32
+[v WriteCmdXLCD@cmd cmd `uc  1 a 1 32 ]
+"60
+} 0
+"13 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\setddram.c
+[v _SetDDRamAddr SetDDRamAddr `(v  1 e 1 0 ]
+{
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 wreg ]
+"32
+[v SetDDRamAddr@DDaddr DDaddr `uc  1 a 1 32 ]
+"60
+} 0
+"8 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _DelayPORXLCD DelayPORXLCD `(v  1 e 1 0 ]
+{
+"11
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 1 0 ]
+{
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 31 ]
+"13
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10ktcyx.c
+[v _Delay10KTCYx Delay10KTCYx `(v  1 e 1 0 ]
+{
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10KTCYx@unit unit `uc  1 a 1 32 ]
+"13
+} 0
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\plib\XLCD\busyxlcd.c
+[v _BusyXLCD BusyXLCD `(uc  1 e 1 0 ]
+{
+"57
+} 0
+"4 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\lcd.c
+[v _DelayFor18TCY DelayFor18TCY `(v  1 e 1 0 ]
+{
+"6
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic18\d10tcyx.c
+[v _Delay10TCYx Delay10TCYx `(v  1 e 1 0 ]
+{
+[v Delay10TCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10TCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10TCYx@unit unit `uc  1 a 1 31 ]
+"13
+} 0
+"122 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\main.c
+[v _SerialRxPinInterrupt SerialRxPinInterrupt `II(v  1 e 1 0 ]
+{
+"159
+} 0
+"14 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\relogio.c
+[v _tratar_relogio tratar_relogio `(v  1 e 1 0 ]
+{
+[s S21 . 6 `i 1 dia 2 0 `i 1 mes 2 2 `i 1 ano 2 4 ]
+[v tratar_relogio@c c `*.39S21  1 p 2 4 ]
+[s S25 . 6 `i 1 minuto 2 0 `i 1 segundo 2 2 `i 1 hora 2 4 ]
+[v tratar_relogio@r r `*.39S25  1 p 2 6 ]
+"74
+} 0
+"6
+[v _verifica_b verifica_b `(v  1 e 1 0 ]
+{
+[v verifica_b@ano ano `i  1 p 2 0 ]
+"12
+} 0
+"52 F:\Faculdade\Faculdade\Eng_Comp\7 Periodo\Microcontroladores\Meus_Projetos\Comunicação Serial-v2\comunicacao serial relogio ok\comunicacao serial relogio ok\pratica_relogio.X\UART.c
+[v _converte_char_hex converte_char_hex `(uc  1 e 1 0 ]
+{
+[v converte_char_hex@dado dado `uc  1 a 1 wreg ]
+[v converte_char_hex@dado dado `uc  1 a 1 wreg ]
+[v converte_char_hex@dado dado `uc  1 a 1 0 ]
+"62
+} 0

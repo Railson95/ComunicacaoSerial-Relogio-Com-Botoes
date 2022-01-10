@@ -1,0 +1,405 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"1 relogio.h
+[s S1 `i 1 `i 1 `i 1 ]
+[n S1 . dia mes ano ]
+"7
+[s S2 `i 1 `i 1 `i 1 ]
+[n S2 . minuto segundo hora ]
+[; ;relogio.h: 1: typedef struct{
+[; ;relogio.h: 2: int dia;
+[; ;relogio.h: 3: int mes;
+[; ;relogio.h: 4: int ano;
+[; ;relogio.h: 5: }calendario;
+[; ;relogio.h: 7: typedef struct{
+[; ;relogio.h: 8: int minuto;
+[; ;relogio.h: 9: int segundo;
+[; ;relogio.h: 10: int hora;
+[; ;relogio.h: 11: }relogio;
+[; ;relogio.h: 13: void tratar_relogio(calendario *c, relogio *r);
+[; ;relogio.h: 14: void verifica_b(int ano);
+[; ;relogio.h: 15: void tratar_alarme(relogio *c);
+[; ;relogio.h: 16: int despertar();
+[; ;relogio.h: 1: typedef struct{
+[; ;relogio.h: 2: int dia;
+[; ;relogio.h: 3: int mes;
+[; ;relogio.h: 4: int ano;
+[; ;relogio.h: 5: }calendario;
+[; ;relogio.h: 7: typedef struct{
+[; ;relogio.h: 8: int minuto;
+[; ;relogio.h: 9: int segundo;
+[; ;relogio.h: 10: int hora;
+[; ;relogio.h: 11: }relogio;
+[; ;relogio.h: 13: void tratar_relogio(calendario *c, relogio *r);
+[; ;relogio.h: 14: void verifica_b(int ano);
+[; ;relogio.h: 15: void tratar_alarme(relogio *c);
+[; ;relogio.h: 16: int despertar();
+"21 var.h
+[v _ESTADO_COMUNICACAO `uc ~T0 @X0 1 e ]
+[; ;var.h: 21: unsigned char ESTADO_COMUNICACAO;
+"22
+[v _serial_data `uc ~T0 @X0 1 e ]
+[; ;var.h: 22: unsigned char serial_data;
+"23
+[v _i `ui ~T0 @X0 1 e ]
+[; ;var.h: 23: unsigned int i ;
+"24
+[v _dado `uc ~T0 @X0 -> 7 `i e ]
+[; ;var.h: 24: unsigned char dado[7];
+"25
+[v _BUFFRESP `uc ~T0 @X0 -> 7 `i e ]
+[; ;var.h: 25: unsigned char BUFFRESP[7];
+"29
+[v _ca `S1 ~T0 @X0 1 e ]
+[; ;var.h: 29: calendario ca;
+"30
+[v _re `S2 ~T0 @X0 1 e ]
+[; ;var.h: 30: relogio re;
+"31
+[v _alarme `S2 ~T0 @X0 1 e ]
+[; ;var.h: 31: relogio alarme;
+"32
+[v _flagDisplay `i ~T0 @X0 1 e ]
+[; ;var.h: 32: int flagDisplay;
+"33
+[v _flag_inicializacao `i ~T0 @X0 1 e ]
+[; ;var.h: 33: int flag_inicializacao;
+"34
+[v _contador `i ~T0 @X0 1 e ]
+[; ;var.h: 34: int contador;
+"36
+[v _flagTela `i ~T0 @X0 1 e ]
+[; ;var.h: 36: int flagTela;
+"37
+[v _T1 `i ~T0 @X0 1 e ]
+[v _T2 `i ~T0 @X0 1 e ]
+[; ;var.h: 37: int T1, T2;
+"38
+[v _posCursor `i ~T0 @X0 1 e ]
+[; ;var.h: 38: int posCursor;
+"39
+[v _posCursorR `i ~T0 @X0 1 e ]
+[; ;var.h: 39: int posCursorR;
+"40
+[v _flagAlarme `i ~T0 @X0 1 e ]
+[; ;var.h: 40: int flagAlarme;
+"41
+[v _tempoAlarme `i ~T0 @X0 1 e ]
+[; ;var.h: 41: int tempoAlarme;
+"42
+[v _entrar `i ~T0 @X0 1 e ]
+[; ;var.h: 42: int entrar;
+"4 relogio.c
+[v _qtdDias_mes `i ~T0 @X0 -> 0 `x e ]
+[i _qtdDias_mes
+:U ..
+-> 31 `i
+-> 28 `i
+-> 31 `i
+-> 30 `i
+-> 31 `i
+-> 30 `i
+-> 31 `i
+-> 31 `i
+-> 30 `i
+-> 31 `i
+-> 30 `i
+-> 31 `i
+..
+]
+[; ;relogio.c: 4: int qtdDias_mes[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+"6
+[v _verifica_b `(v ~T0 @X0 1 ef1`i ]
+{
+[; ;relogio.c: 6: void verifica_b(int ano){
+[e :U _verifica_b ]
+[v _ano `i ~T0 @X0 1 r1 ]
+[f ]
+[; ;relogio.c: 7: if(ano%4==0){
+"7
+[e $ ! == % _ano -> 4 `i -> 0 `i 6  ]
+{
+[; ;relogio.c: 8: qtdDias_mes[1] = 29;
+"8
+[e = *U + &U _qtdDias_mes * -> -> -> 1 `i `ui `ux -> -> # *U &U _qtdDias_mes `ui `ux -> 29 `i ]
+"9
+}
+[; ;relogio.c: 9: }else{
+[e $U 7  ]
+[e :U 6 ]
+{
+[; ;relogio.c: 10: qtdDias_mes[1] = 28;
+"10
+[e = *U + &U _qtdDias_mes * -> -> -> 1 `i `ui `ux -> -> # *U &U _qtdDias_mes `ui `ux -> 28 `i ]
+"11
+}
+[e :U 7 ]
+[; ;relogio.c: 11: }
+[; ;relogio.c: 12: }
+"12
+[e :UE 5 ]
+}
+"14
+[v _tratar_relogio `(v ~T0 @X0 1 ef2`*S1`*S2 ]
+{
+[; ;relogio.c: 14: void tratar_relogio(calendario *c, relogio *r){
+[e :U _tratar_relogio ]
+[v _c `*S1 ~T0 @X0 1 r1 ]
+[v _r `*S2 ~T0 @X0 1 r2 ]
+[f ]
+[; ;relogio.c: 15: r->segundo++;
+"15
+[e ++ . *U _r 1 -> 1 `i ]
+[; ;relogio.c: 16: verifica_b(c->ano);
+"16
+[e ( _verifica_b (1 . *U _c 2 ]
+[; ;relogio.c: 17: if(tempoAlarme < 35 && flagAlarme == 1){
+"17
+[e $ ! && < _tempoAlarme -> 35 `i == _flagAlarme -> 1 `i 9  ]
+{
+[; ;relogio.c: 18: tempoAlarme++;
+"18
+[e ++ _tempoAlarme -> 1 `i ]
+"19
+}
+[; ;relogio.c: 19: }else{
+[e $U 10  ]
+[e :U 9 ]
+{
+[; ;relogio.c: 20: tempoAlarme = 0;
+"20
+[e = _tempoAlarme -> 0 `i ]
+"21
+}
+[e :U 10 ]
+[; ;relogio.c: 21: }
+[; ;relogio.c: 23: if(r->segundo > 59){
+"23
+[e $ ! > . *U _r 1 -> 59 `i 11  ]
+{
+[; ;relogio.c: 24: r->minuto++;
+"24
+[e ++ . *U _r 0 -> 1 `i ]
+[; ;relogio.c: 25: r->segundo = 0;
+"25
+[e = . *U _r 1 -> 0 `i ]
+"26
+}
+[e :U 11 ]
+[; ;relogio.c: 26: }
+[; ;relogio.c: 27: if(r->minuto > 59){
+"27
+[e $ ! > . *U _r 0 -> 59 `i 12  ]
+{
+[; ;relogio.c: 28: r->hora++;
+"28
+[e ++ . *U _r 2 -> 1 `i ]
+[; ;relogio.c: 29: r->minuto = 0;
+"29
+[e = . *U _r 0 -> 0 `i ]
+"30
+}
+[e :U 12 ]
+[; ;relogio.c: 30: }
+[; ;relogio.c: 31: if(r->hora > 23){
+"31
+[e $ ! > . *U _r 2 -> 23 `i 13  ]
+{
+[; ;relogio.c: 32: c->dia++;
+"32
+[e ++ . *U _c 0 -> 1 `i ]
+[; ;relogio.c: 33: r->hora = 0;
+"33
+[e = . *U _r 2 -> 0 `i ]
+"34
+}
+[e :U 13 ]
+[; ;relogio.c: 34: }
+[; ;relogio.c: 35: if(c->dia > qtdDias_mes[c->mes-1]){
+"35
+[e $ ! > . *U _c 0 *U + &U _qtdDias_mes * -> -> - . *U _c 1 -> 1 `i `ui `ux -> -> # *U &U _qtdDias_mes `ui `ux 14  ]
+{
+[; ;relogio.c: 36: c->mes++;
+"36
+[e ++ . *U _c 1 -> 1 `i ]
+[; ;relogio.c: 37: c->dia = 1;
+"37
+[e = . *U _c 0 -> 1 `i ]
+"38
+}
+[e :U 14 ]
+[; ;relogio.c: 38: }
+[; ;relogio.c: 39: if(c->mes > 12){
+"39
+[e $ ! > . *U _c 1 -> 12 `i 15  ]
+{
+[; ;relogio.c: 40: c->ano++;
+"40
+[e ++ . *U _c 2 -> 1 `i ]
+[; ;relogio.c: 41: c->mes = 1;
+"41
+[e = . *U _c 1 -> 1 `i ]
+[; ;relogio.c: 42: c->dia = 1;
+"42
+[e = . *U _c 0 -> 1 `i ]
+[; ;relogio.c: 43: verifica_b(c->ano);
+"43
+[e ( _verifica_b (1 . *U _c 2 ]
+"44
+}
+[e :U 15 ]
+[; ;relogio.c: 44: }
+[; ;relogio.c: 45: if(c->dia < 1){
+"45
+[e $ ! < . *U _c 0 -> 1 `i 16  ]
+{
+[; ;relogio.c: 46: c->dia = qtdDias_mes[c->mes -2];
+"46
+[e = . *U _c 0 *U + &U _qtdDias_mes * -> -> - . *U _c 1 -> 2 `i `ui `ux -> -> # *U &U _qtdDias_mes `ui `ux ]
+[; ;relogio.c: 47: c->mes--;
+"47
+[e -- . *U _c 1 -> 1 `i ]
+"48
+}
+[e :U 16 ]
+[; ;relogio.c: 48: }
+[; ;relogio.c: 49: if(c->mes < 1){
+"49
+[e $ ! < . *U _c 1 -> 1 `i 17  ]
+{
+[; ;relogio.c: 50: c->mes = 12;
+"50
+[e = . *U _c 1 -> 12 `i ]
+[; ;relogio.c: 51: c->ano--;
+"51
+[e -- . *U _c 2 -> 1 `i ]
+[; ;relogio.c: 52: verifica_b(c->ano);
+"52
+[e ( _verifica_b (1 . *U _c 2 ]
+"53
+}
+[e :U 17 ]
+[; ;relogio.c: 53: }
+[; ;relogio.c: 55: if(c->ano < 0) c->ano = 0;
+"55
+[e $ ! < . *U _c 2 -> 0 `i 18  ]
+[e = . *U _c 2 -> 0 `i ]
+[e :U 18 ]
+[; ;relogio.c: 57: if(r->hora < 0){
+"57
+[e $ ! < . *U _r 2 -> 0 `i 19  ]
+{
+[; ;relogio.c: 58: c->dia--;
+"58
+[e -- . *U _c 0 -> 1 `i ]
+[; ;relogio.c: 59: r->hora = 23;
+"59
+[e = . *U _r 2 -> 23 `i ]
+"60
+}
+[e :U 19 ]
+[; ;relogio.c: 60: }
+[; ;relogio.c: 62: if(r->minuto < 0){
+"62
+[e $ ! < . *U _r 0 -> 0 `i 20  ]
+{
+[; ;relogio.c: 63: r->minuto = 59;
+"63
+[e = . *U _r 0 -> 59 `i ]
+[; ;relogio.c: 64: r->hora--;
+"64
+[e -- . *U _r 2 -> 1 `i ]
+"65
+}
+[e :U 20 ]
+[; ;relogio.c: 65: }
+[; ;relogio.c: 67: if(r->segundo < 0){
+"67
+[e $ ! < . *U _r 1 -> 0 `i 21  ]
+{
+[; ;relogio.c: 68: r->segundo = 59;
+"68
+[e = . *U _r 1 -> 59 `i ]
+[; ;relogio.c: 69: r->minuto--;
+"69
+[e -- . *U _r 0 -> 1 `i ]
+"70
+}
+[e :U 21 ]
+[; ;relogio.c: 70: }
+[; ;relogio.c: 74: }
+"74
+[e :UE 8 ]
+}
+"76
+[v _tratar_alarme `(v ~T0 @X0 1 ef1`*S2 ]
+{
+[; ;relogio.c: 76: void tratar_alarme(relogio *c){
+[e :U _tratar_alarme ]
+[v _c `*S2 ~T0 @X0 1 r1 ]
+[f ]
+[; ;relogio.c: 77: if(c->hora > 23) c->hora = 0;
+"77
+[e $ ! > . *U _c 2 -> 23 `i 23  ]
+[e = . *U _c 2 -> 0 `i ]
+[e :U 23 ]
+[; ;relogio.c: 79: if(c->minuto > 59) c->minuto = 0;
+"79
+[e $ ! > . *U _c 0 -> 59 `i 24  ]
+[e = . *U _c 0 -> 0 `i ]
+[e :U 24 ]
+[; ;relogio.c: 81: if(c->segundo > 59) c->segundo = 0;
+"81
+[e $ ! > . *U _c 1 -> 59 `i 25  ]
+[e = . *U _c 1 -> 0 `i ]
+[e :U 25 ]
+[; ;relogio.c: 83: if(c->hora < 0) c->hora = 23;
+"83
+[e $ ! < . *U _c 2 -> 0 `i 26  ]
+[e = . *U _c 2 -> 23 `i ]
+[e :U 26 ]
+[; ;relogio.c: 85: if(c->minuto < 0) c->minuto = 59;
+"85
+[e $ ! < . *U _c 0 -> 0 `i 27  ]
+[e = . *U _c 0 -> 59 `i ]
+[e :U 27 ]
+[; ;relogio.c: 87: if(c->segundo < 0) c->segundo = 59;
+"87
+[e $ ! < . *U _c 1 -> 0 `i 28  ]
+[e = . *U _c 1 -> 59 `i ]
+[e :U 28 ]
+[; ;relogio.c: 89: }
+"89
+[e :UE 22 ]
+}
+"91
+[v _despertar `(i ~T0 @X0 1 ef ]
+{
+[; ;relogio.c: 91: int despertar(){
+[e :U _despertar ]
+[f ]
+[; ;relogio.c: 92: if(re.hora == alarme.hora && re.minuto == alarme.minuto && re.segundo == alarme.segundo){
+"92
+[e $ ! && && == . _re 2 . _alarme 2 == . _re 0 . _alarme 0 == . _re 1 . _alarme 1 30  ]
+{
+[; ;relogio.c: 93: return 1;
+"93
+[e ) -> 1 `i ]
+[e $UE 29  ]
+"94
+}
+[; ;relogio.c: 94: }else{
+[e $U 31  ]
+[e :U 30 ]
+{
+[; ;relogio.c: 95: return 0;
+"95
+[e ) -> 0 `i ]
+[e $UE 29  ]
+"96
+}
+[e :U 31 ]
+[; ;relogio.c: 96: }
+[; ;relogio.c: 98: }
+"98
+[e :UE 29 ]
+}
