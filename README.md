@@ -80,7 +80,11 @@ Status do projeto
 Tecnologias
 =================
 
-<img src="https://img.shields.io/badge/pic-18f4550-orange"/> <img src="https://img.shields.io/badge/IDE-MPLAB-orange"/> <img src="https://img.shields.io/badge/IDE-MPLAB-orange"/> <img src="https://img.shields.io/badge/Compilador-XC8-green"/>
+<img src="https://img.shields.io/badge/pic-18f4550-orange"/> <img src="https://img.shields.io/badge/IDE-MPLAB-orange"/> <img src="https://img.shields.io/badge/16x2-LCD-orange"/> <img src="https://img.shields.io/badge/Compilador-XC8-orange"/> <img src="https://img.shields.io/badge/Linguagem-C-orange"/>
+
+###Autor
+
+Feito com ❤️ por Railson Maritns 👋🏽 Entre em contato!
 
 
 
