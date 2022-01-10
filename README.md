@@ -16,8 +16,8 @@ Tabela de conteúdos
       * [Funcionamento botoes](#fun-botoes)
       * [Comunicacao serial](#com-serial)
    * [Tests](#testes)
-   	* [Realizando a leitura da hora e mostrando no terminal](#leitura-da-hora)
-   	* [Realizando a edição da hora e mostrando no primeiro terminal e no LCD](#edicao-da-hora)
+      * [Realizando a leitura da hora e mostrando no terminal](#leitura-da-hora)
+      * [Realizando a edição da hora e mostrando no primeiro terminal e no LCD](#edicao-da-hora)
    * [Status do projeto](#status-do-projeto)
    * [Tecnologias](#tecnologias)
 <!--te-->
