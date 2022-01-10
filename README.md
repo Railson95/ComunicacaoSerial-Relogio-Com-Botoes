@@ -53,7 +53,27 @@ Para que a comunicação serial funcione, onde o usuário poderá atualizar o re
 6) se for digital  2, 3, HH, MM, SS: Será atualizado o alarme do relógio e mostrado no segundo terminal
 ```
 
+Tests
+----
 
+Realizando a leitura da hora e mostrando no terminal
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/43474214/148815770-91bcf66d-ca42-4554-b179-b3fc434b7bba.png" width="700px" />
+</div>
+
+Realizando a edição da hora e mostrando no primeiro terminal e no LCD
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/43474214/148815860-f820d36f-f118-4857-b797-e2e03f519a4c.png" width="700px" />
+</div>
+
+Status do projeto
+----
+
+<h4 align="center"> 
+	🚧  Relógio com botões e serial 🚀 Em construção...  🚧
+</h4>
 
 
 
