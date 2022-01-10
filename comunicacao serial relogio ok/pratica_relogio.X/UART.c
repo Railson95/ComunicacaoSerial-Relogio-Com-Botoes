@@ -131,17 +131,17 @@ void trata_comando(){
 			switch(dado[1]){
 				case HORA:
 					montar_resposta();                    
-					ESTADO_COMUNICACAO = ENVIA_RESPOSTA;					
+					//ESTADO_COMUNICACAO = ENVIA_RESPOSTA;					
 				break;
 				
                 case DDATA:                  
                     montar_resposta();
-					ESTADO_COMUNICACAO = ENVIA_RESPOSTA;	                   
+					//ESTADO_COMUNICACAO = ENVIA_RESPOSTA;	                   
                 break;
                 
                 case ALARME:
                     montar_resposta();
-                    ESTADO_COMUNICACAO = ENVIA_RESPOSTA;
+                    //ESTADO_COMUNICACAO = ENVIA_RESPOSTA;
                 break;                                
 			}
 		break;

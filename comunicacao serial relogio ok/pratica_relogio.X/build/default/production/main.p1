@@ -4468,9 +4468,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 15: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 18: ca.ano = 2004;
+[; ;main.c: 18: ca.ano = 2010;
 "18
-[e = . _ca 2 -> 2004 `i ]
+[e = . _ca 2 -> 2010 `i ]
 [; ;main.c: 19: ca.mes = 2;
 "19
 [e = . _ca 1 -> 2 `i ]
@@ -4800,47 +4800,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 143: i++;
 "143
 [e ++ _i -> -> 1 `i `ui ]
-"144
-}
-[; ;main.c: 144: }else{
-[e $U 440  ]
-[e :U 436 ]
-{
-[; ;main.c: 145: PIR1bits.RCIF = 0;
+[; ;main.c: 145: ESTADO_COMUNICACAO = 0x01;
 "145
-[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 146: i=0;
+[e = _ESTADO_COMUNICACAO -> -> 1 `i `uc ]
 "146
+}
+[e :U 436 ]
+[; ;main.c: 146: }
+[; ;main.c: 148: if(ESTADO_COMUNICACAO == 0x00){
+"148
+[e $ ! == -> _ESTADO_COMUNICACAO `i -> 0 `i 440  ]
+{
+[; ;main.c: 149: i = 0;
+"149
 [e = _i -> -> 0 `i `ui ]
-[; ;main.c: 150: if (ESTADO_COMUNICACAO == 0x00){
 "150
-[e $ ! == -> _ESTADO_COMUNICACAO `i -> 0 `i 441  ]
-{
-[; ;main.c: 151: ESTADO_COMUNICACAO = 0x03;
-"151
-[e = _ESTADO_COMUNICACAO -> -> 3 `i `uc ]
-"153
-}
-[; ;main.c: 153: } else {
-[e $U 442  ]
-[e :U 441 ]
-{
-[; ;main.c: 154: ESTADO_COMUNICACAO = 0x05;
-"154
-[e = _ESTADO_COMUNICACAO -> -> 5 `i `uc ]
-"156
-}
-[e :U 442 ]
-"157
 }
 [e :U 440 ]
-"158
+"152
 }
 [e :U 435 ]
-[; ;main.c: 156: }
-[; ;main.c: 157: }
-[; ;main.c: 158: }
-[; ;main.c: 159: }
-"159
+[; ;main.c: 150: }
+[; ;main.c: 152: }
+[; ;main.c: 153: }
+"153
 [e :UE 430 ]
 }

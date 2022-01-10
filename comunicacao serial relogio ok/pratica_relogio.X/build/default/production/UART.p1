@@ -4150,9 +4150,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;UART.c: 133: montar_resposta();
 "133
 [e ( _montar_resposta ..  ]
-[; ;UART.c: 134: ESTADO_COMUNICACAO = 0x05;
-"134
-[e = _ESTADO_COMUNICACAO -> -> 5 `i `uc ]
 [; ;UART.c: 135: break;
 "135
 [e $U 411  ]
@@ -4162,9 +4159,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;UART.c: 138: montar_resposta();
 "138
 [e ( _montar_resposta ..  ]
-[; ;UART.c: 139: ESTADO_COMUNICACAO = 0x05;
-"139
-[e = _ESTADO_COMUNICACAO -> -> 5 `i `uc ]
 [; ;UART.c: 140: break;
 "140
 [e $U 411  ]
@@ -4174,9 +4168,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;UART.c: 143: montar_resposta();
 "143
 [e ( _montar_resposta ..  ]
-[; ;UART.c: 144: ESTADO_COMUNICACAO = 0x05;
-"144
-[e = _ESTADO_COMUNICACAO -> -> 5 `i `uc ]
 [; ;UART.c: 145: break;
 "145
 [e $U 411  ]

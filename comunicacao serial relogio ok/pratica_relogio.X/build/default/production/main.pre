@@ -5891,7 +5891,7 @@ void envia_respostaTX();
 void main(void) {
 
 
-ca.ano = 2004;
+ca.ano = 2010;
 ca.mes = 2;
 ca.dia = 28;
 re.hora=23;
@@ -6000,19 +6000,13 @@ if(i<7){
 while(!RCIF);
 dado[i]= converte_char_hex(RCREG);
 i++;
-}else{
-PIR1bits.RCIF = 0;
-i=0;
 
-
-
-if (ESTADO_COMUNICACAO == 0x00){
-ESTADO_COMUNICACAO = 0x03;
-
-} else {
-ESTADO_COMUNICACAO = 0x05;
-
+ESTADO_COMUNICACAO = 0x01;
 }
+
+if(ESTADO_COMUNICACAO == 0x00){
+i = 0;
 }
+
 }
 }

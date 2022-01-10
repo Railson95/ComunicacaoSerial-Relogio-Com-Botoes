@@ -15,7 +15,7 @@
 void main(void) {
     //INICIALIZAÇÕES  
     //inicialização das variáveis do relógio
-    ca.ano = 2004;
+    ca.ano = 2010;
     ca.mes = 2;
     ca.dia = 28;
     re.hora=23;
@@ -101,23 +101,6 @@ void main(void) {
     return;
 }
 
-////CONFIGURANDO A INTERRUPÇÃO
-//void __interrupt() pic_isr(void){
-//    if(TMR0IF){  
-//        TMR0=2535;// RESETA CONTADOR PARA O VALOR ESTABELECIDO (AJUSTE PARA OS SEGUNDOS)
-//        INTCONbits.TMR0IF=0; //ZERA A FLAG DO TIMER0
-//        contador++;
-//    }
-//    if(contador>1){ // AJUSTE DE CÁLCULO PARA OS SEGUNDOS
-//        if(flag_inicializacao == 1 ){ // garantindo que na primeira execução será exibido o segundo "zero"
-//            flag_inicializacao = -1;
-//        }else{
-//            tratar_relogio(&ca, &re); // FUNÇÃO PARA O RELÓGIO SE AJUSTAR
-//            flagDisplay = 1;
-//            contador=0;
-//        }              
-//    }
-//}
 
 void interrupt SerialRxPinInterrupt(){
     if(TMR0IF){  
@@ -136,24 +119,17 @@ void interrupt SerialRxPinInterrupt(){
     }
 
     //check if the interrupt is caused by RX pin
-    if(PIR1bits.RCIF == 1){
-        if(i<7){
-        	while(!RCIF);//recepeção de dados concluido? RCIF vale 1
+   if(PIR1bits.RCIF == 1){
+        if(i<7){ 
+        	while(!RCIF);//recepe??o de dados concluido? RCIF vale 1
             	dado[i]= converte_char_hex(RCREG);                                 // Retrieve data from reception register
-            	i++;  
-        }else{
-            PIR1bits.RCIF = 0; // clear rx flag
-            i=0;
-			//ESTADO_COMUNICACAO = COMANDO_RECEBIDO;
+            	i++;    
             
-            
-            if (ESTADO_COMUNICACAO == ESPERA_COMANDO){
-                ESTADO_COMUNICACAO = COMANDO_OK;
-                //entrar = 0;
-            } else {
-                ESTADO_COMUNICACAO = ENVIA_RESPOSTA;
-                
-            }   
+            ESTADO_COMUNICACAO = COMANDO_RECEBIDO;
         } 
+
+        if(ESTADO_COMUNICACAO == ESPERA_COMANDO){
+            i = 0;    
+        }  
     }
 }
