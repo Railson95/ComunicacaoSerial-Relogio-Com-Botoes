@@ -84,7 +84,7 @@ Tecnologias
 Autor
 ---
 
-Feito com ❤️ por Railson Maritns 👋🏽 Entre em contato!
+Feito por Railson Maritns 👋🏽 Entre em contato!
 
 
 
