@@ -16,6 +16,9 @@ Tabela de conteúdos
       * [Funcionamento botoes](#fun-botoes)
       * [Comunicacao serial](#com-serial)
    * [Tests](#testes)
+   	* [Realizando a leitura da hora e mostrando no terminal](#leitura-da-hora)
+   	* [Realizando a edição da hora e mostrando no primeiro terminal e no LCD](#edicao-da-hora)
+   * [Status do projeto](#status-do-projeto)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
@@ -56,13 +59,13 @@ Para que a comunicação serial funcione, onde o usuário poderá atualizar o re
 Tests
 =================
 Realizando a leitura da hora e mostrando no terminal
-
+----
 <div align="center">
 <img src="https://user-images.githubusercontent.com/43474214/148815770-91bcf66d-ca42-4554-b179-b3fc434b7bba.png" width="700px" />
 </div>
 
 Realizando a edição da hora e mostrando no primeiro terminal e no LCD
-
+----
 <div align="center">
 <img src="https://user-images.githubusercontent.com/43474214/148815860-f820d36f-f118-4857-b797-e2e03f519a4c.png" width="700px" />
 </div>
