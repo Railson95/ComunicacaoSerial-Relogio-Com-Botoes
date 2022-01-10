@@ -54,8 +54,7 @@ Para que a comunicação serial funcione, onde o usuário poderá atualizar o re
 ```
 
 Tests
-----
-
+=================
 Realizando a leitura da hora e mostrando no terminal
 
 <div align="center">
@@ -69,7 +68,7 @@ Realizando a edição da hora e mostrando no primeiro terminal e no LCD
 </div>
 
 Status do projeto
-----
+=================
 
 <h4 align="center"> 
 	🚧  Relógio com botões e serial 🚀 Em construção...  🚧
