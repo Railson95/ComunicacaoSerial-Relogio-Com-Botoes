@@ -16,7 +16,7 @@ Tabela de conteúdos
       * [Comunicacao serial](#comunicacao-serial)
    * [Tests](#testes)
       * [Realizando a leitura da hora e mostrando no terminal](#realizando-a-leitura-da-hora-e-mostrando-no-terminal)
-      * [Realizando a edição da hora e mostrando no primeiro terminal e no LCD](#Realizando-a-edição-da-hora-e-mostrando-no-primeiro-terminal-e-no-LCD)
+      * [Realizando a edição da hora e mostrando no primeiro terminal e no LCD](#Realizando-a-edição-da-hora-e-mostrando-no-LCD)
    * [Status do projeto](#status-do-projeto)
    * [Tecnologias](#tecnologias)
 <!--te-->
@@ -63,7 +63,7 @@ Realizando a leitura da hora e mostrando no terminal
 <img src="https://user-images.githubusercontent.com/43474214/148815770-91bcf66d-ca42-4554-b179-b3fc434b7bba.png" width="700px" />
 </div>
 
-Realizando a edição da hora e mostrando no primeiro terminal e no LCD
+Realizando a edição da hora e mostrando no LCD
 ----
 <div align="center">
 <img src="https://user-images.githubusercontent.com/43474214/148815860-f820d36f-f118-4857-b797-e2e03f519a4c.png" width="700px" />
