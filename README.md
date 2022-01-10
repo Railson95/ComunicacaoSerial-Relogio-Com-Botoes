@@ -77,6 +77,13 @@ Status do projeto
 	🚧  Relógio com botões e serial 🚀 Em construção...  🚧
 </h4>
 
+Tecnologias
+=================
+
+<img src="https://img.shields.io/badge/pic-18f4550-orange"/> <img src="https://img.shields.io/badge/IDE-MPLAB-orange"/> <img src="https://img.shields.io/badge/IDE-MPLAB-orange"/> <img src="https://img.shields.io/badge/Compilador-XC8-green"/>
+
+
+
 
 
 
