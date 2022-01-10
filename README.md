@@ -37,9 +37,19 @@ Funcionamento botoes
 ```bash
 Neste sistema a 4 botões
 1) Trocar tela -> podendo seguir tanto para Hora e Data ou alarme
-2) 
+2) Trocar cursor -> move o cursor do LCD entre as casas
+3) Incrementar 
+4) Decrementar
 ```
 Comunicacao serial
 ----
-			
+```bash
+Para que a comunicação serial funcione, onde o usuário poderá atualizar o relógio ou mesmo mostrar os dados atuais em outro terminal, é necessário seguir a seguinte lógica
+1) Se for digitado 1, 1: Será mostrado a hora atual no segundo terminal
+2) se for digital  1, 2: Será mostrado a data atual no segundo terminal
+3) se for digital  1, 3: Será mostrado o alarme atual no segundo terminal
+4) se for digital  2, 1, HH, MM, SS: Será atualizado a hora do relógio e mostrado no segundo terminal
+5) se for digital  2, 2, DD, MM, AA: Será atualizado a data do relógio e mostrado no segundo terminal
+6) se for digital  2, 3, HH, MM, SS: Será atualizado o alarme do relógio e mostrado no segundo terminal
+```			
 		
